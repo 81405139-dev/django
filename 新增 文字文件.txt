@@ -1,0 +1,20 @@
+開啟: python manage.py runserver
+
+python -m venv .venv
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+
+pip install django
+
+
+http://127.0.0.1:8000/admin/
+
+
+製作資料庫遷移檔: python manage.py makemigration
+
+執行資料庫同步: python manage.py migrate
+
+重啟伺服器: python manage.py runserver
+
+建立後台管理員帳號: python manage.py createsuperuser    http://127.0.0.1:8000/admin/
